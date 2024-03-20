@@ -1,0 +1,7 @@
+{
+    "operationName": "vinSLPPageQuery",
+    "variables": {
+        "vin": "KM8K5CA5XLU554094"
+    },
+    "query": "query vinSLPPageQuery($vin: String, $license: String) {\n  vehicleUrlByVin: vehicleUrlByVin(vin: $vin, license: $license) {\n    url\n    error\n    make\n    makeId\n    model\n    modelId\n    year\n    vin\n    __typename\n  }\n}"
+}
